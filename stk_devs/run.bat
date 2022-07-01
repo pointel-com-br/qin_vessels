@@ -1,0 +1,2 @@
+@echo off
+docker run -dit -v %POINTELDIRS%\Work:/root -v %POINTELDIRS%\Code:/root/Code -v %POINTELDIRS%\Pool:/root/Pool -v %POINTELDIRS%\Prod:/root/Prod -v %POINTELDIRS%\Test:/root/Test pointeldevs/stk_devs
