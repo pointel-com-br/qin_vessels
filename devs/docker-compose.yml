@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  all_stacks:
+    container_name: pin_maker
+    build: .
+    volumes:
+      - ../../../Work:/root
+      - ../../../Code:/root/Code
+      - ../../../Pool:/root/Pool
+      - ../../../Prod:/root/Prod
+      - ../../../Test:/root/Test
+    stdin_open: true
+    tty: true
