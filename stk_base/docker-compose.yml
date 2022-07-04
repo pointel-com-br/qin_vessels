@@ -12,3 +12,9 @@ services:
       - ${QIN_ROOT}/Pool:/root/Pool
       - ${QIN_ROOT}/Prod:/root/Prod
       - ${QIN_ROOT}/Test:/root/Test
+    networks:
+      - qin_net_stk_base
+    
+networks:
+  qin_net_stk_base:
+    external: true
