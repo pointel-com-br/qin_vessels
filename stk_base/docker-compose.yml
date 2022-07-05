@@ -13,8 +13,8 @@ services:
       - ${QIN_ROOT}/Prod:/root/Prod
       - ${QIN_ROOT}/Test:/root/Test
     networks:
-      - qin_net_stk_base
-    
+      - qin_net_dev
+
 networks:
-  qin_net_stk_base:
+  qin_net_dev:
     external: true
