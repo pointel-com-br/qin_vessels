@@ -12,6 +12,8 @@ services:
       - ${QIN_ROOT}/Pool:/root/Pool
       - ${QIN_ROOT}/Prod:/root/Prod
       - ${QIN_ROOT}/Test:/root/Test
+    environment:
+      - QIN_ROOT=/root
     networks:
       - qin_net_dev
 
