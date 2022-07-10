@@ -1,2 +1,2 @@
 @echo off
-docker network create qin_net_stk
+docker network create --driver bridge qin_net_stk
