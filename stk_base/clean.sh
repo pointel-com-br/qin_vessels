@@ -1,3 +1,3 @@
 #!/bin/bash
-docker stop qin_con_base
-docker rm qin_con_base
+docker stop qcon_stk_base
+docker rm qcon_stk_base

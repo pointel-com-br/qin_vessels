@@ -1,3 +1,3 @@
 #!/bin/bash
-docker stop qin_con_data
-docker rm qin_con_data
+docker stop qcon_stk_data
+docker rm qcon_stk_data

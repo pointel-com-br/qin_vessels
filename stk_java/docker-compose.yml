@@ -1,9 +1,9 @@
 version: "3.9"
 services:
-  qin_ser_java:
+  qser_stk_java:
     tty: true
     stdin_open: true
-    container_name: qin_con_java
+    container_name: qcon_stk_java
     build: .
     volumes:
       - ${QIN_ROOT}/Work:/root

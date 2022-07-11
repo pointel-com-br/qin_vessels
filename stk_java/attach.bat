@@ -1,2 +1,2 @@
 @echo off
-docker attach qin_con_java
+docker attach qcon_stk_java
