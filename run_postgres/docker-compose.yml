@@ -9,6 +9,7 @@ services:
       - POSTGRES_PASSWORD=${QIN_POSTGRES_PASS}
     ports:
       - 5432:5432
+    restart: always
     networks:
       - qin_net_run
 
