@@ -4,7 +4,7 @@ services:
     tty: true
     stdin_open: true
     container_name: qcon_stk_data
-    build: .
+    image: pointeldevs/stk_data
     volumes:
       - ${QIN_ROOT}/Work:/root
       - ${QIN_ROOT}/Arch:/root/Arch
