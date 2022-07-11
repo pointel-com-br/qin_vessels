@@ -5,6 +5,7 @@ services:
     stdin_open: true
     container_name: qcon_stk_base
     image: pointeldevs/stk_base
+    build: .
     volumes:
       - ${QIN_ROOT}/Work:/root
       - ${QIN_ROOT}/Arch:/root/Arch
