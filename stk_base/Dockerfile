@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.16
 RUN apk update
 RUN apk add zip unzip curl wget bash fish
 RUN apk add tmux git nano neovim alpine-sdk
