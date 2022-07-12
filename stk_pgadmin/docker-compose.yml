@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  qser_stk_pgadmin:
+    container_name: qcon_stk_pgadmin
+    image: dpage/pgadmin4
+    volumes:
+      - ${QIN_ROOT}/Arch:/Pointel/Arch
+    environment:
+      - QIN_ROOT=/Pointel
+      - PGADMIN_DEFAULT_EMAIL=pgadmin@pointel.com.br
+      - PGADMIN_DEFAULT_PASSWORD=pgadmin
+    ports:
+      - "15432:80"
+    networks:
+      - qin_net_stk
+
+networks:
+  qin_net_stk:
+    external: true
