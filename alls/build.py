@@ -2,7 +2,7 @@ import os
 
 if __name__ == '__main__':
     print("Building all images...")
-    os.chdir("stk_base")
+    os.chdir("../stk_base")
     os.system("docker compose build")
     os.chdir("../stk_data")
     os.system("docker compose build")
