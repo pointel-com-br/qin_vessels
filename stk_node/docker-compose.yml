@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  qser_stk_node:
+    tty: true
+    stdin_open: true
+    container_name: qcon_stk_node
+    image: pointeldevs/stk_node
+    build: .
+    volumes:
+      - ${QIN_ROOT}/Work:/root
+      - ${QIN_ROOT}/Arch:/root/Arch
+      - ${QIN_ROOT}/Code:/root/Code
+      - ${QIN_ROOT}/Pool:/root/Pool
+      - ${QIN_ROOT}/Prod:/root/Prod
+      - ${QIN_ROOT}/Test:/root/Test
+    environment:
+      - QIN_ROOT=/root
+    networks:
+      - qin_net_stk
+
+networks:
+  qin_net_stk:
+    external: true
