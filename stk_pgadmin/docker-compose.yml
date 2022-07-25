@@ -5,12 +5,15 @@ services:
     image: dpage/pgadmin4
     volumes:
       - ${QIN_ROOT}/Arch:/Pointel/Arch
+      - ${QIN_ROOT}/Work/.pgadmin:/var/lib/pgadmin
     environment:
       - QIN_ROOT=/Pointel
-      - PGADMIN_DEFAULT_EMAIL=pgadmin@pointel.com.br
-      - PGADMIN_DEFAULT_PASSWORD=pgadmin
+      - PGADMIN_DEFAULT_EMAIL=${QIN_PGADMIN_USER}
+      - PGADMIN_DEFAULT_PASSWORD=${QIN_PGADMIN_PASS}
     ports:
-      - "15432:80"
+      - "5433:80"
+    expose:
+      - 5433
     networks:
       - qin_net_stk
 
