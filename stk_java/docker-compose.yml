@@ -1,9 +1,9 @@
 version: "3.9"
 services:
-  qser_stk_java:
+  qvess_ser_stk_java:
     tty: true
     stdin_open: true
-    container_name: qcon_stk_java
+    container_name: qvess_con_stk_java
     image: pointeldevs/stk_java
     build: .
     volumes:

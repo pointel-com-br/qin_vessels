@@ -1,9 +1,9 @@
 version: "3.9"
 services:
-  qser_run_data:
+  qvess_ser_run_data:
     tty: true
     stdin_open: true
-    container_name: qcon_run_data
+    container_name: qvess_con_run_data
     image: pointeldevs/run_data
     build: .
     volumes:

@@ -1,9 +1,9 @@
 version: "3.9"
 services:
-  qser_stk_base:
+  qvess_ser_stk_base:
     tty: true
     stdin_open: true
-    container_name: qcon_stk_base
+    container_name: qvess_con_stk_base
     image: pointeldevs/stk_base
     build: .
     volumes:

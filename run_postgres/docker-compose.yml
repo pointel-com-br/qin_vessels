@@ -1,7 +1,7 @@
 version: "3.9"
 services:
-  qser_run_postgres:
-    container_name: qcon_run_postgres
+  qvess_ser_run_postgres:
+    container_name: qvess_con_run_postgres
     image: postgres:13-alpine
     volumes:
       - ${QIN_ROOT}/Data/postgres:/var/lib/postgresql/data

@@ -1,9 +1,9 @@
 version: "3.9"
 services:
-  qser_run_node:
+  qvess_ser_run_node:
     tty: true
     stdin_open: true
-    container_name: qcon_run_node
+    container_name: qvess_con_run_node
     image: pointeldevs/run_node
     build: .
     volumes:
