@@ -3,7 +3,7 @@ services:
   qvess_ser_run_data:
     tty: true
     stdin_open: true
-    container_name: qvess_con_run_data
+    container_name: qvess_run_data
     image: pointeldevs/run_data
     build: .
     volumes:

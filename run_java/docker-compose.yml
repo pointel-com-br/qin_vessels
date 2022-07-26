@@ -3,7 +3,7 @@ services:
   qvess_ser_run_java:
     tty: true
     stdin_open: true
-    container_name: qvess_con_run_java
+    container_name: qvess_run_java
     image: pointeldevs/run_java
     build: .
     volumes:

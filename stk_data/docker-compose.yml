@@ -3,7 +3,7 @@ services:
   qvess_ser_stk_data:
     tty: true
     stdin_open: true
-    container_name: qvess_con_stk_data
+    container_name: qvess_stk_data
     image: pointeldevs/stk_data
     build: .
     volumes:
