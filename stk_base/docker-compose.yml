@@ -17,6 +17,7 @@ services:
       - QIN_ROOT=/root
     networks:
       - qin_net_stk
+    working_dir: /root
 
 networks:
   qin_net_stk:
